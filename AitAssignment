@@ -1,0 +1,1409 @@
+1.	Program to implement Audio and Video features for your web page. 
+
+Program: 
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Audio And Video</title> 
+</head> 
+<body> 
+<div class="main-section"> 
+<div class="Cat"> 
+<h2>Happy Birthday Panda!</h2> 
+<video width="320" height="240" controls> 
+<source src="E:/cat_lovers2229-20210806-0001.mp4" type="video/mp4"> 
+</video> 
+</div> 
+<div> 
+ <br><br>Audio<br><br> 
+<audio controls autoplay><source src="E:/Hain Aaj Mera Janamdin.mp3"  
+type="audio/ogg"></audio> 
+</div> 
+</div> 
+</body> 
+</html>
+
+Output:
+ 
+
+
+
+
+2.	Program to design form using HTML5 elements, attributes and Semantics. 
+Program:
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Social Media Profile</title> 
+ <link rel="stylesheet" href="./style.css"> 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font 
+awesome/4.7.0/css/font-awesome.min.css"> 
+
+<style>
+
+    
+ 
+*{ 
+ margin: 0; 
+ padding: 0; 
+} 
+.homepage{ 
+ background-color: #eff1f3; 
+} 
+.navbar{ 
+ background-color:rgb(86, 104, 119) ;  padding-left:20px; 
+ padding-right:20px; 
+ position:sticky; 
+ top: 0; 
+} 
+.menu li{ 
+ list-style: none; 
+ display: inline-block; 
+ padding: 20px; 
+ margin-top: 10px; 
+ margin-bottom: 10px;  
+} 
+a{ 
+ 
+  
+color:white; 
+ text-decoration: none; 
+ font-size: 20px; 
+} 
+li:hover{ 
+ border-radius: 8px; 
+ background-color: rgb(50, 70, 86);} } 
+.content{ 
+ padding: 10px; 
+} 
+.rightside{ 
+ float: right;  
+} 
+.myprofile{ 
+ margin: 20px; 
+ padding: 20px; 
+ background-color: #FFFF; 
+ border-radius: 8px; 
+ width: 30%; 
+ text-align: center; 
+} 
+.myprofile img{ 
+ height: 100px; 
+ border-radius: 60px; 
+ padding: 10px; 
+} 
+hr{ 
+ margin: 13px; 
+} 
+.myprofile ul{ 
+ text-align: left; 
+} 
+li{ 
+ list-style: none; 
+ padding: 10px; 
+ font-size: 18px; 
+}
+    
+ 
+.post{ 
+ margin: 20px; 
+ padding: 20px; 
+ background-color: #FFFF;  border-radius: 8px; 
+ width: 90%;  
+} 
+.post textarea{ 
+ width: 100%; 
+} 
+.post button, 
+.post1 button{ 
+ padding: 10px; 
+ margin: 10px; 
+ background-color: #7D97A5;  color: #FFFF; 
+ font-size: 17px; 
+ border: none; 
+} 
+.post button, 
+.post1 button:hover{ 
+ background-color: #bfced5;  color:black; 
+} 
+.post1{ 
+ margin: 20px; 
+ padding: 20px; 
+ background-color: #FFFF;  border-radius: 8px; 
+ width: 90%; 
+} 
+.post1 img{ 
+ display: inline-block;   height: 100px; 
+ border-radius: 60px;  } 
+.post1 li{ 
+ display: inline-block; 
+} 
+.post1 h4{ 
+ padding: 10px; 
+ padding-top: 10px; 
+} 
+ 
+.post1 p{ 
+ width: 900px; 
+ padding: 10px; 
+ text-indent: 30px; 
+ line-height: 2rem; 
+ font-size:18px; 
+} 
+.grpphoto{ 
+ margin: 20px; 
+ padding: 20px; 
+ background-color: #7D97A5;  border-radius: 8px; 
+ width: 30%; 
+ text-align: center; 
+} 
+.grpphoto ul{  
+ text-align: left; 
+} 
+.grpphoto li{ 
+ color: white; 
+} 
+.grpphoto li:hover{ 
+ background-color: #bfced5;  color:black; 
+} 
+a{ 
+ text-decoration: none; 
+} 
+a li:active{  
+font-size: 20px; 
+} 
+textarea:valid{ 
+ background-color: white; 
+} 
+textarea:invalid{ 
+ border:1px solid yellow; 
+} 
+.footer-section{ 
+ background-color:rgb(86, 104, 119) ;  padding-left:20px; 
+ padding-right:20px; 
+ margin-top: 30px; 
+ width: 100%; 
+ display:inline-flex; 
+  
+} 
+.footer-section li{ 
+ display: inline-block; 
+ padding:30px; 
+}
+
+</style>
+
+</head> 
+<body> 
+ <section class="homepage"> 
+ <header class="navbar"> 
+ <ul class="menu"> 
+ 
+ <a href="#"><li><i class="fa fa-home w3-margin-right"></i>&nbsp; Home</li></a>  <a href="#"><li><i class="fa fa-globe"></i>&nbsp; lang</li></a> 
+ <a href="#"><li><i class="fa fa-user"></i>&nbsp; Account</li></a> 
+ <a href="#"><li><i class="fa fa-bell"></i>&nbsp; Notification</li></a>  </ul> 
+ </header> 
+ <section class="content"> 
+ <section class="rightside"> 
+ <article class="post"> 
+ <textarea placeholder=" update status here..." rows="5" cols="100"  required></textarea> 
+ <br><button value="post"><i class="fa fa-pencil"></i>&nbsp; Post</button>  </article> 
+ <article class="post1"> 
+ <ul> 
+ <li><img src="E:/woman.png"></li> 
+ <li><h4>Shravani Sonawane</h4></li> 
+ <li><span>16 min</span></li> 
+ </ul> <hr>  
+ 
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+ <button type="button"><i class="fa fa-thumbs-up"></i> Like</button>   <button type="button"><i class="fa fa-comment"></i> Comment</button>   </article>  
+ <article class="post1"> 
+ <ul>
+ <li><img src="E:/woman.png"></li> 
+ <li><h4>Vaishnavi Pagire</h4></li><li><span>16 min</span></li>  </ul><hr> 
+ <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation  ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+ <button type="button"><i class="fa fa-thumbs-up"></i> Like</button>   <button type="button"><i class="fa fa-comment"></i> Comment</button>   </article>  
+ </section>  
+ <section class="leftside"> 
+ <article class="myprofile"> 
+ <h2>My Profile</h2> 
+ <img src="E:/woman.png"> 
+ <h4>Vaishnavi Choudhary</h4><hr> 
+ <ul> 
+ <li><i class="fa fa-pencil"></i>&nbsp; Designer, UI</li> 
+ <li><i class="fa fa-home"></i>&nbsp; Ahmednagar, India</li> 
+ <li><i class="fa fa-birthday-cake"></i>&nbsp; 3 Feb, 2001</li>  </ul> 
+ </article> 
+ <article class="grpphoto"> 
+ <ul> 
+ <a href=""><li><i class="fa fa-circle-o-notch"></i>&nbsp; My Group</li></a>  <a href=""><li><i class="fa fa-calendar-check-o"></i>&nbsp; My Event</li></a>  <a href=""><li><i class="fa fa-users "></i>&nbsp; My Photo</li></a>   </ul> 
+ </article> 
+ </section> 
+ </section> 
+ <footer class="footer-section"> 
+ <ul> 
+ <a href="https://www.facebook.com/"><li><i class="fa fa-facebook" aria hidden="true"></i></li></a> 
+ <a href="https://www.instagram.com/?hl=en"><li><i class="fa fa-instagram" aria hidden="true"></i></li></a> 
+ <a href="https://www.pinterest.com/"><li><i class="fa fa-pinterest-p" aria hidden="true"></i></li></a> 
+ <a href="https://twitter.com/?lang=en"><li><i class="fa fa-twitter" aria hidden="true"></i></li></a> 
+ </ul>  
+ </footer> 
+ </section> 
+</body> 
+</html>
+
+Output:
+
+ 
+
+
+
+
+3.	Programs using Canvas and SVG.
+
+Program
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Smile</title> 
+<style> 
+ellipse{ 
+fill:black; 
+stroke:purple; 
+} 
+</style> 
+</head> 
+<body> 
+<svg height="1000" width="1000"> 
+<circle cx="450" cy="250" r="130" stroke="black" stroke-width="3" fill="yellow" />  <ellipse cx="400" cy="220" rx="15" ry="30"/> 
+<ellipse cx="480" cy="220" rx="15" ry="30"/> 
+<path d="M 370 300 q 70 70 150 0" stroke="black" stroke-width="12" fill="none" />  </svg> 
+</body> 
+</html>
+
+Output:
+ 
+4. Programs to demonstrate external and internal styles in the web page using font, text,  background, borders, opacity and other CSS 3 properties.
+
+Program:
+ 
+<!DOCTYPE html> 
+<html> 
+ <head> 
+ <title>InternalExternal CSS</title> 
+ <link rel="stylesheet" href="./anv.css"> 
+ <style> 
+ .container{ 
+ display: flex; 
+ margin-top: 2%; 
+ } 
+ .main { 
+ text-align:center; 
+ margin-left: 5%; 
+ height: 400px; 
+ width: 40%; 
+ background-color: rgb(245, 48, 196); 
+ } 
+ .IC { 
+ color:#0a0208; 
+ font-size:50px; 
+ font-weight:bold; 
+ } 
+ .ICP { 
+ font-style:bold; 
+ font-size:20px; 
+ border-style: solid; 
+} 
+ 
+ </style> 
+ </head> 
+ <body> 
+ <div class="container"> 
+ <div class = "main"> 
+ <div class ="IC">Internal CSS</div> 
+ <div class ="ICP">Here use the Internal CSS..</div> 
+ </div> 
+ <div class = "Emain"> 
+ <div class ="EIC">External CSS</div> 
+ <div class ="EICP">Here use the External CSS..</div> 
+ </div> 
+ </div> 
+ </body> 
+</html>
+External CSS 
+.Emain { 
+    text-align:center; 
+    margin-left: 5%; 
+    height: 400px; 
+    width: 40%; 
+    background-color: rgb(192, 240, 21); 
+    } 
+    .EIC { 
+    color:#01060a; 
+    font-size:50px; 
+    font-weight:bold; 
+    } 
+    .EICP { 
+    font-style:bold; 
+    font-size:20px; 
+    border-style: dashed; 
+   } 
+   .EICP:hover { 
+    opacity: 0.5; 
+   }
+ 
+
+Output:
+  
+
+
+4.	Implement Transformation using Translation, Rotation and Scaling in your web page. 
+
+Program: 
+ 
+<!DOCTYPE html> 
+<html> 
+ <head> 
+ <meta charset="utf-8"> 
+ <title>transform</title> 
+ <style type="text/css"> 
+ .main{ 
+ height: 200px; 
+ width: 200px;  
+ background-color: aqua; 
+ margin: 30px auto auto 400px; 
+ } 
+ .box{ 
+ height: 200px; 
+ width: 200px; 
+ background-color: rgb(109, 139, 0); 
+ transition: width 0.2s, height 2s, transform 1s; 
+ } 
+ .box:hover{ 
+ transform: rotate(445deg); /* Use rotate for roration*/ 
+ width: 500px; 
+ height: 300px; 
+ } 
+ .translate1 { 
+ /* specify translation properties for class translate1 */ 
+ transform: translate(20px);/* Use of translate*/ 
+ background-color: skyblue; 
+ width: 1200px; 
+ } 
+ .scale1 { 
+ /* specify scaling properties for class scale1 */ 
+ transform: scale(1.2); 
+ background-color: red; 
+ width: 800px; 
+ margin-left: 200px; 
+ } 
+ </style> 
+ 
+ </head> 
+
+ <body> 
+ <h1>Normal without Translate</h1> 
+ <h1 class="translate1">Use of Translate 60px</h1> 
+ <h1 style="width: 900px; margin-left: 100px;"> Normal Scale</h1> 
+ <h1 class="scale1">Scale: 1.2 </h1> 
+ <div class="main">
+ <div class="box"></div> 
+ </div> 
+ </body> 
+</html>
+
+
+
+Output:
+ 
+
+
+5.	Program using built-in modules to split the query string into readable parts.
+ Program:
+
+var today = new Date(); 
+var day = today.getDay(); 
+var daylist = [ 
+ "Sunday", 
+ "Monday", 
+ "Tuesday", 
+ "Wednesday", 
+ "Thursday", 
+ "Friday", 
+ "Saturday",]; 
+console.log("Today is: " + daylist[day] + "."); 
+var hour = today.getHours(); 
+var minute = today.getMinutes(); 
+var second = today.getSeconds(); 
+var prepand = hour >= 12 ? " PM " : " AM "; 
+hour = hour >= 12 ? hour - 12 : hour; 
+if (hour === 0 && prepand === " PM ") { 
+ if (minute === 0 && second === 0) { 
+ hour = 12; 
+ prepand = " Noon"; 
+ } else { 
+ hour = 12; 
+ prepand = " PM"; 
+ } 
+} if (hour === 0 && prepand === " AM ") { 
+ if (minute === 0 && second === 0) { 
+ hour = 12; 
+ prepand = " Midnight"; 
+ } else { 
+ hour = 12; 
+ prepand = " AM"; 
+ } 
+} 
+console.log( "Current Time : " + hour + prepand + " : " + minute + " : " + second); 
+
+Output:
+ 
+
+
+6.	Program using built-in modules to split the query string into readable parts 
+Program: 
+var querystring = require("querystring"); 
+console.log("Use of Built In Module"); 
+var q = querystring.parse("year=2017&month=february"); 
+console.log(q.year); 
+
+
+Output:
+
+ 
+
+
+
+
+
+
+
+
+
+7.	Program using NPM which will convert entered string into either case 
+
+Program: 
+
+// npm install readline-sync
+const readline = require('readline-sync');
+
+// Read user input
+const input = readline.question('Enter a string: ');
+
+// Convert to uppercase
+const uppercase = input.toUpperCase();
+console.log('Uppercase: ', uppercase);
+
+// Convert to lowercase
+const lowercase = input.toLowerCase();
+console.log('Lowercase: ', lowercase);
+
+
+
+Output:
+ 
+9. Write a program to create a calculator using Node JS. (Install and configure Node JS and  Server) 
+Program:
+const readline = require('readline-sync');
+// Function to perform addition
+function add(num1, num2) {
+  return num1 + num2;
+}
+// Function to perform subtraction
+function subtract(num1, num2) {
+  return num1 - num2;
+}
+// Function to perform multiplication
+function multiply(num1, num2) {
+  return num1 * num2;
+}
+// Function to perform division
+function divide(num1, num2) {
+  if (num2 === 0) {
+    return "Error: Cannot divide by zero";
+  }
+  return num1 / num2;
+}
+// Read user input
+const num1 = parseFloat(readline.question('Enter the first number: '));
+const num2 = parseFloat(readline.question('Enter the second number: '));
+const operator = readline.question('Enter the operator (+, -, *, /): ');
+let result;
+// Perform the calculation based on the operator
+switch (operator) {
+  case '+':
+    result = add(num1, num2);
+    break;
+  case '-':
+    result = subtract(num1, num2);
+    break;
+  case '*':
+    result = multiply(num1, num2);
+    break;
+  case '/':
+    result = divide(num1, num2);
+    break;
+  default:
+    result = 'Invalid operator';
+}
+
+// Display the result
+console.log('Result: ', result);
+Output:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.Write Program for Form validation in Angular. 
+Program:
+
+app.component.html 
+
+<form (ngSubmit)="submitForm()" #myForm="ngForm">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="formData.name" required>
+    <div *ngIf="myForm.controls['name'].touched && myForm.controls['name'].hasError('required')">Name is required.</div>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="formData.email" required email>
+    <div *ngIf="myForm.controls['email'].touched && myForm.controls['email'].hasError('required')">Email is required.</div>
+    <div *ngIf="myForm.controls['email'].touched && myForm.controls['email'].hasError('email')">Invalid email format.</div>
+  </div>
+  <button type="submit" [disabled]="myForm.invalid">Submit</button>
+</form>
+app.component.ts
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  formData = {
+    name: '',
+    email: ''
+  };
+
+  submitForm() {
+    console.log(this.formData);
+  }
+}
+app.module.ts
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, FormsModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+
+Output:
+
+ 
+
+
+ 
+
+
+
+11. Program to demonstrate the ngif, ngfor, ngswitch statements.  
+Program
+
+app.component.html
+<h1>ngIf Example</h1>
+<div *ngIf="showElement">
+  <p>This element is displayed using ngIf directive.</p>
+</div>
+
+<hr>
+
+<h1>ngFor Example</h1>
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+<hr>
+
+<h1>ngSwitch Example</h1>
+<div [ngSwitch]="color">
+  <p *ngSwitchCase="'red'">Red is selected</p>
+  <p *ngSwitchCase="'blue'">Blue is selected</p>
+  <p *ngSwitchCase="'green'">Green is selected</p>
+  <p *ngSwitchDefault>No color selected</p>
+</div>
+
+app.component.ts
+
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  showElement = true;
+  items = ['Item 1', 'Item 2', 'Item 3'];
+  color = 'blue';
+}
+
+Output
+ 
+
+
+12. Create angular project which will demonstrate the usage of component directive, structural directive and attribute directives 
+Program
+//Generate the necessary components and directives
+ng generate component component-directive
+ng generate component structural-directive
+ng generate directive attribute-directive
+component-directive.component.ts
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-component-directive',
+  template: `
+    <h2>Component Directive Example</h2>
+    <p>This is a component directive.</p>
+  `,
+})
+export class ComponentDirectiveComponent {}
+structural-directive.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-structural-directive',
+  template: `
+    <h2>Structural Directive Example</h2>
+    <ul>
+      <li *ngFor="let item of items">{{ item }}</li>
+    </ul>
+  `,
+})
+export class StructuralDirectiveComponent {
+  items: string[] = ['Item 1', 'Item 2', 'Item 3'];
+}
+attribute-directive.directive.ts
+import { Directive, ElementRef } from '@angular/core';
+
+@Directive({
+  selector: '[appAttributeDirective]',
+})
+export class AttributeDirectiveDirective {
+  constructor(private elementRef: ElementRef) {
+    this.elementRef.nativeElement.style.backgroundColor = 'yellow';
+  }
+}
+app.component.html
+<h1>Angular Directive Demo</h1>
+<app-component-directive></app-component-directive>
+<app-structural-directive></app-structural-directive>
+<p appAttributeDirective>Attribute Directive Example</p>
+
+
+
+Output:
+
+ 
+
+
+
+
+
+
+
+
+13. Create angular project which has HTML template and handle the click event on click of the button (Installation of Angular and Bootstrap 4 CSS Framework)
+Program
+//Install Bootstrap 4 CSS Framework
+npm install bootstrap
+app.component.html
+<h1>Welcome to my Angular project!</h1>
+<button (click)="handleClick()">Click me!</button>
+<p *ngIf="showMessage">{{ message }}</p>
+app.component.ts
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  showMessage = false;
+  message = 'Button clicked!';
+
+  handleClick() {
+    this.showMessage = true;
+  }
+}
+app.component.css
+@import '~bootstrap/dist/css/bootstrap.min.css';
+Output: 
+
+ 
+
+
+ 
+
+
+
+
+14.Program for basic operations, array and user interface handling. Program: 
+basic operations and user interface handling 
+<!DOCTYPE html> 
+ <html> 
+ <head> 
+ <title>Even Odd Number</title> 
+ </head> 
+ <body> 
+ <center> 
+ <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"> 
+ <label>Enter Num1:</label>
+ <input type="number" name="num1" id="num1"/> <br/> <br/>
+ <label>Enter Num2:</label>
+  <input type="number" name="num2" id="num2"/>  <br><br> 
+ <input type="submit" name="submit" value="+"> 
+ <input type="submit" name="submit" value="-"> 
+ <input type="submit" name="submit" value="*"> 
+ <input type="submit" name="submit" value="/"> 
+ <input type="submit" name="submit" value="%"><br><br>  </form> 
+ <?php 
+ if(isset($_POST['submit'])){ 
+ $choice=$_POST['submit']; 
+ $num1=$_POST['num1']; 
+ $num2=$_POST['num2']; 
+ switch($choice){ 
+ case '+': 
+ echo "Addition: " .$num1 + $num2; 
+ break; 
+ case '-': 
+ echo "Substraction: " .$num1 - $num2; 
+ break; 
+ case '*': 
+ echo "Multiplication: " .$num1 * $num2; 
+ break; 
+ case '/': 
+ echo "Division: " .$num1 / $num2; 
+ break; 
+ case '%': 
+ echo "Modulus: " .$num1 % $num2; 
+ break; 
+ default: 
+ echo "error"; 
+ }
+ } 
+ ?> 
+ </center> </body> </html>
+
+
+
+
+Output: 
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+Array 
+<?php 
+ // Declaration array                           
+ $week=Array(); 
+ // Initialization of array 
+ $week[0] = 'Sunday'; 
+ $week[1] = 'Monday';  
+ $week[2] = 'Tuesday'; 
+ $week[3] = 'Wednesday'; 
+ $week[4] = 'Thursday'; 
+ $week[5] = 'Friday'; 
+ $week[6] = 'Saturday'; 
+ // Printing array element 
+ echo "<b>Printing array element</b>"; 
+ echo '<br>'.$week[0]; 
+ echo '<br>'.$week[1]; 
+ echo '<br>'.$week[2]; 
+ echo '<br>'.$week[3]; 
+ echo '<br>'.$week[4]; 
+ echo '<br>'.$week[5]; 
+ echo '<br>'.$week[6]; 
+ ?>
+
+
+ Output:
+ 
+
+
+15. Program to demonstrate session management using various techniques. 
+Index.html 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Home Page</title> 
+</head> 
+<body> 
+ <a href="./login.html"><input type="button" name="login" id="login" value="Login"></a>   <a href="./registration.html"><input type="button" name="registration" id="registration"  value="Registration"></a>  
+</body> 
+</html> 
+login.html 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Home Page</title> 
+</head> 
+<body> 
+ <a href="./login.html"><input type="button" name="login" id="login" value="Login"></a>   <a href="./registration.html"><input type="button" name="registration" id="registration"  value="Registration"></a>  
+</body> 
+</html> 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <link rel="stylesheet" href="./style.css "> 
+</head> 
+<body> 
+<h2>Login Form</h2> 
+<form action="./getuname.php" method="post"> 
+ <div class="container"> 
+ <label for="uname"><b>Username</b></label> 
+ <br/>
+ <input type="text" placeholder="Enter Username" name="uname" required> <br/>
+  <label for="psw"><b>Password</b></label> <br/>
+ <input type="password" placeholder="Enter Password" name="pass" required> <br/>
+  <button type="submit">Login</button> <br/>
+ <label> 
+ <input type="checkbox" checked="checked" name="remember"> Remember me  </label> 
+ </div> 
+ <div class="container"> 
+ <button type="button" class="cancelbtn">Cancel</button> <br/>
+ <span class="psw">Sign Up <a href="./registration.php">Now?</a></span><br/>  </div> 
+</form> 
+</body> 
+</html> 
+registration.html
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">  <link rel="stylesheet" href="./style.css "> 
+ <title>Registration Page</title> 
+</head> 
+<body> 
+<h2>Registration Form</h2> 
+<form action="./verify.php" method="post" name="registation-form">  <div class="container"> 
+ <label for="uname"><b>Username</b></label> <br/>
+ <input type="text" placeholder="Enter Username" name="uname" required>
+ <br/>  <label for="psw"><b>Password</b></label> <br/>
+ <input type="password" placeholder="Enter Password" name="pass" required><br/>
+   <label for="psw"><b>Confirm Password</b></label> <br/>
+ <input type="password" placeholder="Confirm Password" name="cpass" required> <br/><br/>
+   <button type="submit">Register</button>
+ <button type="button" class="cancelbtn">Cancel</button> <br/>
+ <span class="psw">Already have a Account <a href="./login.php">login?</a></span>  </div> 
+</form> 
+</body> 
+</html>
+Verify.php 
+<?php  
+ $username = $_POST['uname']; 
+ $password = $_POST['pass']; 
+ if(isset($_POST['uname'])){ 
+ session_start(); 
+ $_SESSION["uname"]=$username; 
+ $_SESSION["pass"]=$password; 
+ echo "Session Started ";  
+ echo "<a href='login.html'>Login now</a>"; 
+ }else{ 
+ echo "Please Enter Valid Details"; 
+ } 
+?> 
+getuname.php 
+<?php 
+ if(isset($_POST['uname'])){ 
+ session_start(); 
+ if ($_SESSION['uname'] === $_POST['uname'] and $_SESSION['pass'] === $_POST['pass']){  echo " Welcome " . $_SESSION['uname'] ." , Login is successful"; 
+ echo "<a href='link.html'>welcome</a>"; 
+ } else{ 
+ echo "Login Failed"; 
+ }  
+ } 
+?> 
+link.php 
+<?php 
+ session_start(); 
+ echo "Hii Welcome <br><br>"; 
+ echo $_SESSION["uname"]."<br><br>"; 
+ echo "Login SuccessFull<br><br>"; 
+ echo "<a href='./logout.php'> <button name='Logout' id='Registration'>Logout</button>  </a>"; 
+ ?> 
+logout.php 
+<?php 
+session_start(); 
+session_unset(); 
+session_destroy(); 
+?>
+
+ 
+
+Output
+ 
+ 
+
+ 
+
+ 
+ 
+  
+
+
+
+
+16. Program to perform the CRUD Operations using PHP Script.
+Program
+<?php
+
+// Database connection settings
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "phpcrud";
+
+// Create a new record
+function createRecord($name, $email) {
+    global $host, $username, $password, $database;
+
+    $conn = mysqli_connect($host, $username, $password, $database);
+
+    $name = mysqli_real_escape_string($conn, $name);
+    $email = mysqli_real_escape_string($conn, $email);
+
+    $query = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
+    mysqli_query($conn, $query);
+
+    mysqli_close($conn);
+}
+
+// Read all records
+function readRecords() {
+    global $host, $username, $password, $database;
+
+    $conn = mysqli_connect($host, $username, $password, $database);
+
+    $query = "SELECT * FROM users";
+    $result = mysqli_query($conn, $query);
+
+    $rows = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $rows[] = $row;
+    }
+
+    mysqli_close($conn);
+
+    return $rows;
+}
+
+// Update a record
+function updateRecord($id, $name, $email) {
+    global $host, $username, $password, $database;
+
+    $conn = mysqli_connect($host, $username, $password, $database);
+
+    $id = mysqli_real_escape_string($conn, $id);
+    $name = mysqli_real_escape_string($conn, $name);
+    $email = mysqli_real_escape_string($conn, $email);
+
+    $query = "UPDATE users SET name='$name', email='$email' WHERE id='$id'";
+    mysqli_query($conn, $query);
+
+    mysqli_close($conn);
+}
+
+// Delete a record
+function deleteRecord($id) {
+    global $host, $username, $password, $database;
+
+    $conn = mysqli_connect($host, $username, $password, $database);
+
+    $id = mysqli_real_escape_string($conn, $id);
+
+    $query = "DELETE FROM users WHERE id='$id'";
+    mysqli_query($conn, $query);
+
+    mysqli_close($conn);
+}
+
+// Usage examples
+// Uncomment the following lines to test the CRUD operations
+
+// Create a new record
+// createRecord("Vaishnavi Choudhary", "Vaishnavichoudhary200@gmail.com");
+// createRecord("Shravani Sonawane", "shravani@gmail.com");
+// createRecord("Shweta Chothe", "shweta@gmail.com");
+// createRecord("Vaishnavi Pagire", "Vaishnavi@gmail.com");
+
+
+// Read all records
+// $users = readRecords();
+// foreach ($users as $user) {
+//     echo "ID: " . $user['id'] . "<br>";
+//     echo "Name: " . $user['name'] . "<br>";
+//     echo "Email: " . $user['email'] . "<br>";
+//     echo "<br>";
+// }
+
+// Update a record
+// updateRecord(2, "Shravani Sonawane", "shravani30000@gmail.com");
+
+// Delete a record
+// deleteRecord(3);
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Application</title>
+     
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        form {
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .form-group {
+            margin-bottom: 10px;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 5px;
+        }
+        
+        .form-group button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+        
+        .delete-button {
+            background-color: #f44336;
+            margin-left: 5px;
+        }
+        
+        .delete-button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+ 
+</head>
+<body>
+    <h1>CRUD Application</h1>
+
+    <form method="post" action="">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Create</button>
+        </div>
+    </form>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <?php
+        // Read all records and display them in the table
+        $users = readRecords();
+        foreach ($users as $user) {
+            echo "<tr>";
+            echo "<td>" . $user['id'] . "</td>";
+            echo "<td>" . $user['name'] . "</td>";
+            echo "<td>" . $user['email'] . "</td>";
+            echo "<td><a class='delete-button' href='?delete=" . $user['id'] . "'>Delete</a></td>";
+            echo "</tr>";
+        }
+        ?>
+    </table>
+</body>
+</html>
+
+Create
+ 
+Read
+
+ 
+
+
+
+Update
+
+ 
+
+Delete
+
+ 
+
+
+
+
+
+
+
+17.Program to implement Audio and Video features for your web page: Record video and audio of yours- About me and link with your bootstrap resume.
+Program
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vaishnavi Resume</title>   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="bg-dark bg-gradient text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 text-left text-md-center mb-3">
+            <img class="rounded-circle img-fluid" id="image" src="3.jpg" alt="Profile Photo" onclick="playVideo()" style="cursor: pointer;">
+            <video id="video" style="display: none; height: 200px;">
+              <source src="video.mp4" type="video/mp4">
+            </video>
+          
+          </div>
+          <div class="col-md-6">
+            <h1>Vaishnavi Choudhary</h1>
+            <h5>Web Developer</h5>
+            <p class="border-top pt-5">To Grow With The Company where I can Effectively contribute my Software Skills As Professional </p>
+          </div> 
+          <div class = "row"> 
+          </div>    
+        </div>        
+      </div>
+    </header>
+    <nav class="bg-dark text-white-50 mb-5">
+      <div class="container">
+          <div class="row p-3">
+              <div class="col-md pb-2 pb-md-0">
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  </svg>
+                  <a href="#" class="text-white ml-2">vaishnavichoudhary200@gmail.com</a>
+              </div>
+              <div class="col-md text-md-center pb-2 pb-md-0">
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          </svg>
+                  <a href="#" class="text-white ml-2">vaishnavichoudhary200@gmail.com</a>
+              </div>       
+              <div class="col-md text-md-right">
+                  <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<svg>
+                  <a href="#" class="text-white ml-2">9607576072</a>
+              </div>       
+          </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="row">
+        <div class="col-md mb-5">
+          <h2 class="mb-3">Work Experience</h2>
+          <ul>
+            <li>
+              <h6 class="text-primary">Web Developer / Helixware Solution Private Limited 2023-Present</h6>
+              <p>Working as an intern in the company as a React Js Developer</p>
+            </li>
+          </ul>
+          <h2 class="mb-3">Projects</h2>
+          <ul>
+            <li>
+              <h6 class="text-primary">Boat Management System</h6>
+              <p>Its is an Website Based on Boat Management. Frontend - Html, Bootstrap Css, Backend - Php, Mysql.</p>
+            </li>
+            <li>
+              <h6 class="text-primary">Notepad</h6>
+              <p>Notepad is a small and fast notetaking app for making notes.
+                important-notessss.onrender.com</p>
+            </li>
+            <li>
+              <h6 class="text-primary">Coding Tube</h6>
+              <p>App which contains Handpick videos from youtube and done using
+                MERN technologies. <a href="https://codecode101.onrender.com/" class="text-white-50">https://codecode101.onrender.com/</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md mb-5">
+          <h2 class="mb-3">Education</h2> 
+          <ul>
+            <li>
+              <h6 class="text-primary">Master of Computer Application <br/>(2022-Present)</h6>
+              <p>INSTITUTE OF MANAGEMENT STUDIES CAREER DEVELOPMENT & RESEARCH</p>
+            </li>
+            <li>
+              <h6 class="text-primary">Bachelor of Business Administration(Computer Application) <br/>(2019-2022)</h6>
+              <p>RAJARSHI SHAHU MAHAVIDYALA DEOLALI PRAVARA</p>
+            </li>
+            <li>
+              <h6 class="text-primary">HSC<br/>(2019)</h6>
+              <p>PADMASHRI VIKHE PATIL COLLEGE OF ARTS SCIENCE & COMMERCE PRAVARANAGAR</p>
+            </li>
+            <li>
+              <h6 class="text-primary">SSC<br/>(2017)</h6>
+              <p>DE PAUL ENGLISH MEDIUM HIGH SCHOOL RAHURI FACTORY</p>
+            </li>
+          </ul> 
+        </div>     
+      </div>    
+      <div class="row">
+        <div class="col-md mb-5">
+          <h2 class="mb-5">Skills</h2>      
+            <button type="button" class="btn btn-primary">HTML </button>
+            <button type="button" class="btn btn-primary">CSS</button>
+            <button type="button" class="btn btn-primary">BOOTSTRAP </button>
+            <button type="button" class="btn btn-primary">PHP </button>
+            <button type="button" class="btn btn-primary">REACT JS </button>
+            <br/>
+            <br/>
+            <button type="button" class="btn btn-primary">MONGO DB </button>
+            <button type="button" class="btn btn-primary">JAVA </button>
+            <button type="button" class="btn btn-primary">DATA STRUCTURE </button>
+            <button type="button" class="btn btn-primary">JAVASCRIPT </button>
+            <br/><br/>
+            <button type="button" class="btn btn-primary">NODE JS </button>
+            <button type="button" class="btn btn-primary">FIGMA </button>
+            <button type="button" class="btn btn-primary">GIT AND GITHUB</button>
+            <button type="button" class="btn btn-primary">OOSE </button>
+            <br/><br/>
+            <button type="button" class="btn btn-primary">C AND C++ </button>
+            <button type="button" class="btn btn-primary">POSTMAN </button>
+        </div>
+        <div class="col-md">
+          <h4 class="mb-1">SOFT SKILLS</h4> 
+          <h6>Communication Skills, Positive Attitude, Self Confidence, Excellent Presentation Skills, Analytical, Team work,Self
+Motivated.</h6>
+
+            <br/><br/>
+            <audio controls>
+              <source src="cat.wav" type="audio/wav">
+            </audio>
+            <!-- <video width="320" height="240" controls>
+              <source src="movie.mp4" type="video/mp4">
+            </video> -->
+        <div class="col-md">
+          <h4 class="mb-2">ACHIEVEMENTS</h4> 
+          <h6>Actively Participate in all the events and win the rewards
+            on the achivements</h6>
+            <br/><br/>
+            <div class="col-md">
+              <h4 class="mb-2">DECLARATION</h4> 
+              <h6>I hereby declare that all furnished information made here
+              is true and correct to the best of my knowledge and
+              belief</h6>
+         
+      </div>
+    </main>
+    <footer class="bg-dark text-white-50 text-center mt-5 p-3">
+      &copy; 2023 Vaishnavi Choudhary - <a href="https://github.com/vaishh-101" class="text-white-50">GitHub</a> | <a href="https://www.linkedin.com/in/vaishnavi-choudhary-845a4a1b7" class="text-white-50">LinkedIn</a> | <a href="https://twitter.com/101_vaishnavi" class="text-white-50">Twitter</a>
+    </footer>
+    <script>
+      function playVideo() {
+        var image = document.getElementById('image');
+        var video = document.getElementById('video');
+  
+        image.style.display = 'none';
+        video.style.display = 'block';
+        video.play();
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+Output
+
+Onclicking on image the video plays and audio is in the softskill section.
+
+
+
+ 
+
+
